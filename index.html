@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="title">
+            Your Library
+        </div>
+        <button type="button" id="add-book">Add</button>
+    </div>
+    <div id="main">
+        <ul id="books-list">
+            <li class="heading book">
+                <span class="table-heading">S. No.</span>
+                <span class="table-heading">Title</span>
+                <span class="table-heading">Author</span>
+                <span class="table-heading">Pages</span>
+                <span class="table-heading">Read</span>
+                <span class="table-heading">Delete</span>
+            </li>
+        </ul>
+
+        <form action="" method="post" class="hidden" id="response">
+            <ul id="form">
+                <li>
+                    <label for="book-title">Title</label>
+                    <input type="text" id="book-title" name="book-title" required>
+                </li>
+                <li>
+                    <label for="book-author">Author</label>
+                    <input type="text" name="book-author" id="book-author" required>
+                </li>
+                <li>
+                    <label for="book-pages">Pages</label>
+                    <input type="number" id="book-pages" id="book-pages" required>
+                </li>
+                <li class="form-row-1">
+                    <label for="read-status">Read</label>
+                    <input type="hidden" id="read-status" name="read-status" value="No">
+                    <input type="checkbox" name="read-status" id="read-status" value="Yes">
+                </li>
+                <li class="form-row-2">
+                    <button type="button" id="form-cancel">Cancel</button>
+                    <button type="submit" id="form-submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div id="footer">
+        <img class="test">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
