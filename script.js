@@ -123,7 +123,13 @@ function submitFunction(event){
     const bookPages = document.getElementById("book-pages");
     const readStatus = document.getElementById("read-status");
 
-    var addBook = new Book(bookTitle.value, bookAuthor.value, bookPages.value, readStatus.value);
+    var readValue;
+    if(readStatus.checked)
+        readValue = "Yes";
+    else
+        readValue = "No";
+
+    var addBook = new Book(bookTitle.value, bookAuthor.value, bookPages.value, readValue);
 
     addBookToLibrary(addBook);
 
